@@ -1,0 +1,67 @@
+2019-03-18 17:18:21 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: ChineseGov)
+2019-03-18 17:18:21 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2 (default, Feb 13 2019, 10:07:58) - [Clang 10.0.0 (clang-1000.11.45.5)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-18 17:18:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ChineseGov', 'LOG_FILE': 'ChineseGovlog20190318.txt', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'ChineseGov.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['ChineseGov.spiders']}
+2019-03-18 17:18:21 [scrapy.extensions.telnet] INFO: Telnet Password: dfacbe25b4cae68c
+2019-03-18 17:18:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-18 17:18:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-18 17:18:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-18 17:18:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['ChineseGov.pipelines.ChinesegovPipeline']
+2019-03-18 17:18:21 [scrapy.core.engine] INFO: Spider opened
+2019-03-18 17:18:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-18 17:18:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-18 17:18:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.lm.gov.cn/gb/employment/2004-06/30/content_38180.htm>: HTTP status code is not handled or not allowed
+2019-03-18 17:18:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.lm.gov.cn/gb/employment/2004-06/04/content_34302.htm>: HTTP status code is not handled or not allowed
+2019-03-18 17:18:29 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://www.lm.gov.cn/gb/employment/2004-07/09/content_31814.htm>: HTTP status code is not handled or not allowed
+2019-03-18 17:18:29 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-18 17:18:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 89832,
+ 'downloader/request_count': 244,
+ 'downloader/request_method_count/GET': 244,
+ 'downloader/response_bytes': 4283692,
+ 'downloader/response_count': 244,
+ 'downloader/response_status_count/200': 240,
+ 'downloader/response_status_count/404': 4,
+ 'dupefilter/filtered': 321,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 18, 9, 18, 29, 892062),
+ 'httperror/response_ignored_count': 3,
+ 'httperror/response_ignored_status_count/404': 3,
+ 'log_count/INFO': 12,
+ 'memusage/max': 49864704,
+ 'memusage/startup': 49860608,
+ 'offsite/domains': 3,
+ 'offsite/filtered': 3,
+ 'request_depth_max': 2,
+ 'response_received_count': 244,
+ 'robotstxt/request_count': 2,
+ 'robotstxt/response_count': 2,
+ 'robotstxt/response_status_count/200': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 242,
+ 'scheduler/dequeued/memory': 242,
+ 'scheduler/enqueued': 242,
+ 'scheduler/enqueued/memory': 242,
+ 'start_time': datetime.datetime(2019, 3, 18, 9, 18, 21, 944982)}
+2019-03-18 17:18:29 [scrapy.core.engine] INFO: Spider closed (finished)
